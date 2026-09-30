@@ -1,322 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Taniya Juice Corner | Fresh Fruit Juice in [City]</title>
-<meta name="description" content="Fresh fruit juices, shakes and coolers made in front of you at Taniya Juice Corner.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Taniya Juice Corner | Fresh Fruit Juice & Shakes in Mohali</title>
+<meta name="description" content="Fresh fruit juices, thick shakes and cold coffee squeezed to order at Taniya Juice Corner, opposite Amity University Punjab, Mohali.">
+<link rel="canonical" href="https://harry7870-tech.github.io/TaniyaJuiceCorner/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#F28C28">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Taniya Juice Corner"><meta property="og:title" content="Taniya Juice Corner | Fresh Fruit Juice & Shakes in Mohali"><meta property="og:description" content="Fresh fruit juices, thick shakes and cold coffee squeezed to order at Taniya Juice Corner, opposite Amity University Punjab, Mohali."><meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xmlns:c2pa='http://c2pa.org/manifest'%3E%3Cmetadata%3E%3Cc2pa:manifest%3EAAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmNGFhMjAyZC02YzVhLTQ0MGUtYmUyNy0xYzdhOTJlYjAyZWUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaMbcaEs3Lym45GhuuHZt9OoAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo0NWQxYjBiMi1jZTIyLTRiNWYtODg5YS0xZmJmNzNiNWRlODdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNod6qOMNw5sKFyJ1f4g9imegAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggHAz/dV6yMQOZZ1BXaKabUFe+xqOPS+rimw0nqQZDgEqkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaOfsU+DlR3OeXleMXDpl03EAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCO100Pwcpqk0A1CoSFEASEMzVPoC0VOtS8n3pqGri4FmRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBh7Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmY0YWEyMDJkLTZjNWEtNDQwZS1iZTI3LTFjN2E5MmViMDJlZS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmViZGVlYWQxLTlkNTMtNGRhNi1hM2NlLWEyNGQ1ZjE4NmEyMXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAcDP91XrIxA5lnUFdopptQV77Go49L6uKbDSepBkOASqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggh/R/3Qh2nqD6MU0j5O3NhDbVXM3w/I3Ee4UiKFGFPMeiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggGaI8SXFKLH3R3UISlmx/7h16EpreuDffr3F69cGckRh0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQGsmpw2BeWQN0//sY3FqKt3BJW6lrBfzzsaj8+Z1homRs1rdtuVO+59jCtqpAgYkxHue/0EFHyAj2r/OOmoFf8E=%3C/c2pa:manifest%3E%3C/metadata%3E%3Ccircle cx='16' cy='16' r='14' fill='%23F28C28'/%3E%3Ccircle cx='16' cy='16' r='10' fill='%23FDE3C0'/%3E%3Cg stroke='%23F28C28' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M16 6v20M6 16h20M9 9l14 14M23 9L9 23'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='2.2' fill='%23F28C28'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-<style>
-:root {
-  --bg: #FFF8EC;
-  --surface: #FFFFFF;
-  --text: #2B2B2B;
-  --muted: #5E5A52;
-  --orange: #F28C28;
-  --orange-soft: #FDE3C0;
-  --green: #2A7F48;
-  --green-deep: #1F5C38;
-  --on-green: #FFF8EC;
-  --line: #EBDFC8;
-  --ph: rgba(242,140,40,.28);
-  box-sizing: border-box;
-  padding-top: env(safe-area-inset-top, 0px);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #1D1912; --surface: #2A241A; --text: #F6EEDD; --muted: #BDB39D;
-    --orange-soft: #4A3417; --green: #3FA363; --green-deep: #173F27; --line: #3B3324; --ph: rgba(242,140,40,.35);
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #1D1912; --surface: #2A241A; --text: #F6EEDD; --muted: #BDB39D;
-  --orange-soft: #4A3417; --green: #3FA363; --green-deep: #173F27; --line: #3B3324; --ph: rgba(242,140,40,.35);
-}
-html { scroll-padding-top: env(safe-area-inset-top, 0px); scroll-behavior: smooth; }
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--text); font-family: "Open Sans", system-ui, sans-serif; line-height: 1.6; font-size: 16px; }
-h1, h2, h3 { font-family: "Poppins", system-ui, sans-serif; line-height: 1.15; margin: 0; }
-a { color: inherit; }
-:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
-.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
-.ph { background: var(--ph); border-radius: 4px; padding: 0 .3em; }
-
-/* nav */
-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); }
-.nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 12px; padding-bottom: 12px; }
-.logo { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 1.1rem; text-decoration: none; display: flex; align-items: center; gap: 8px; }
-.logo svg { width: 28px; height: 28px; }
-nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
-nav a { text-decoration: none; font-weight: 600; font-size: .95rem; }
-nav a:hover { color: var(--green); }
-@media (max-width: 720px) { nav ul { display: none; } }
-
+<style>:root{--bg:#FFF8EC;--surface:#fff;--text:#2B2B2B;--muted:#5E5A52;--orange:#F28C28;--orange-soft:#FDE3C0;--green:#2A7F48;--green-deep:#1F5C38;--on-green:#FFF8EC;--line:#EBDFC8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1D1912;--surface:#2A241A;--text:#F6EEDD;--muted:#BDB39D;--orange-soft:#4A3417;--green:#3FA363;--green-deep:#173F27;--line:#3B3324}}
+:root[data-theme=dark]{--bg:#1D1912;--surface:#2A241A;--text:#F6EEDD;--muted:#BDB39D;--orange-soft:#4A3417;--green:#3FA363;--green-deep:#173F27;--line:#3B3324}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 "Open Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Poppins",system-ui,sans-serif;line-height:1.15;margin:0}
+h2{font-size:clamp(1.6rem,4.5vw,2.2rem);margin-bottom:8px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+.logo{font:700 1.1rem Poppins,sans-serif;text-decoration:none;display:flex;align-items:center;gap:8px}
+nav ul{list-style:none;display:flex;gap:6px;margin:0;padding:0;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:600;font-size:.95rem;padding:8px 14px;border-radius:999px;display:block;transition:background .2s,color .2s}
+nav a:hover{background:var(--orange-soft)}
+nav a[aria-current=page]{background:var(--green);color:#fff}
+.eyebrow{color:var(--green);font-weight:600;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;margin:0 0 10px}
+.lead{font-size:1.1rem;color:var(--muted);max-width:40ch;margin:16px 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font:600 .95rem Poppins,sans-serif;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(0,0,0,.15)}
+.btn.primary{background:var(--green);color:#fff}
+.btn.ghost{border:2px solid var(--text)}
+.btn.ghost.light{border-color:var(--on-green);color:var(--on-green)}
+.btn.orange{background:var(--orange);color:#2B2B2B}
 /* hero */
-.hero { padding: 40px 0 56px; }
-.hero .wrap { display: grid; gap: 32px; align-items: center; }
-@media (min-width: 800px) { .hero .wrap { grid-template-columns: 1.1fr .9fr; } .hero { padding: 72px 0 80px; } }
-.hero h1 { font-size: clamp(2.2rem, 7vw, 3.6rem); font-weight: 700; letter-spacing: -.02em; }
-.hero p.lead { font-size: 1.1rem; color: var(--muted); max-width: 34ch; margin: 16px 0 26px; }
-.btns { display: flex; flex-wrap: wrap; gap: 12px; }
-.btn { display: inline-block; padding: 13px 22px; border-radius: 999px; font-weight: 600; text-decoration: none; font-family: "Poppins", sans-serif; font-size: .95rem; }
-.btn.primary { background: var(--green); color: #fff; }
-.btn.ghost { border: 2px solid var(--text); }
-.btn.orange { background: var(--orange); color: #2B2B2B; }
-.hero-art { position: relative; display: grid; place-items: center; }
-.blob { position: absolute; width: 88%; aspect-ratio: 1; background: var(--orange-soft); border-radius: 46% 54% 58% 42% / 50% 44% 56% 50%; }
-.hero-art svg { position: relative; width: min(300px, 78%); height: auto; }
-.fill { transform-origin: bottom; animation: rise 1.6s cubic-bezier(.3,.7,.2,1) both; }
-@keyframes rise { from { transform: scaleY(0); } to { transform: scaleY(1); } }
-.hours { margin-top: 22px; font-size: .9rem; color: var(--muted); }
+.hero{padding:40px 0 56px}
+.hero .wrap{display:grid;gap:32px;align-items:center}
+@media(min-width:800px){.hero .wrap{grid-template-columns:1.1fr .9fr}.hero{padding:72px 0 80px}}
+.hero h1{font-size:clamp(2.3rem,7vw,3.7rem);letter-spacing:-.02em}
+.hours{font-size:.9rem;color:var(--muted);margin-top:22px}
+.hero-art{position:relative;display:grid;place-items:center}
+.blob{position:absolute;width:88%;aspect-ratio:1;background:var(--orange-soft);border-radius:46% 54% 58% 42%/50% 44% 56% 50%;animation:morph 9s ease-in-out infinite alternate}
+.hero-art svg{position:relative;width:min(300px,78%);height:auto;animation:bob 4s ease-in-out infinite}
+.fill{transform-origin:bottom;animation:rise 1.6s cubic-bezier(.3,.7,.2,1) both}
+@keyframes rise{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes bob{50%{transform:translateY(-10px) rotate(2deg)}}
+@keyframes morph{to{border-radius:58% 42% 44% 56%/44% 58% 42% 56%}}
+/* page head */
+.pagehead{padding:48px 0 28px;background:var(--orange-soft);border-bottom:1px solid var(--line)}
+.pagehead h1{font-size:clamp(2rem,6vw,3rem)}
+.pagehead .lead{margin-bottom:0}
+/* sections */
+.sec{padding:56px 0}
+.sec.alt{background:var(--surface);border-block:1px solid var(--line)}
+.prose{max-width:62ch}.prose p{color:var(--muted)}
+.tiles{display:grid;gap:16px;margin-top:26px}
+@media(min-width:700px){.tiles{grid-template-columns:repeat(4,1fr)}}
+.tile{display:flex;flex-direction:column;gap:6px;padding:22px;border-radius:22px;text-decoration:none;color:#2B2B2B;transition:transform .25s,box-shadow .25s;min-height:170px}
+.tile:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:0 14px 26px rgba(0,0,0,.15)}
+.tile p{margin:0;font-size:.92rem;flex:1}.tile span{font-weight:700;font-family:Poppins,sans-serif;font-size:.9rem}
+.t1{background:#FDD9A0}.t2{background:#DDEFC8}.t3{background:#FFE9A6}.t4{background:#FBCFCF}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:26px}
+@media(min-width:700px){.cards{grid-template-columns:repeat(4,1fr);gap:20px}}
+.card{text-decoration:none;text-align:center;padding:14px;border-radius:26px;background:var(--t);color:#2B2B2B;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-8px) scale(1.03);box-shadow:0 16px 28px rgba(0,0,0,.18)}
+.card .cup{color:var(--c);display:grid;place-items:center;height:110px}
+.card .cup svg{height:92px;width:auto;transition:transform .3s}
+.card:hover .cup svg{transform:rotate(-8deg) scale(1.1)}
+.card h3{font-size:1rem;margin-top:6px}
+.card p{margin:4px 0 2px;font-size:.85rem;opacity:.85}
+.more{margin-top:30px}
+.why-grid{display:grid;gap:28px;margin-top:28px}
+@media(min-width:760px){.why-grid{grid-template-columns:repeat(3,1fr);gap:36px}}
+.why-item{border-top:4px solid var(--orange);padding-top:14px}
+.why-item:nth-child(2){border-color:var(--green)}
+.why-item h3{font-size:1.15rem;margin-bottom:6px}.why-item p{margin:0;color:var(--muted)}
+.post{display:block;text-decoration:none;max-width:680px;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:28px;transition:transform .25s,box-shadow .25s}
+.post:hover{transform:translateY(-5px);box-shadow:0 14px 26px rgba(0,0,0,.12)}
+.post .tag{color:var(--green);font-weight:600;font-size:.85rem}
+.post h2{font-size:1.5rem;margin:8px 0 10px}.post p{color:var(--muted);margin:0 0 18px}
+.cta{background:var(--green-deep);color:var(--on-green);padding:52px 0}
+.cta .wrap{display:grid;gap:20px;align-items:center}
+@media(min-width:800px){.cta .wrap{grid-template-columns:1.4fr auto}}
+.cta p{margin:10px 0 0;opacity:.9;max-width:46ch}
+.two{display:grid;gap:32px}
+@media(min-width:800px){.two{grid-template-columns:1fr 1fr}}
+dl{margin:0 0 22px;display:grid;gap:14px}
+dt{font:600 .95rem Poppins,sans-serif}dd{margin:2px 0 0;color:var(--muted)}
+.review{background:var(--orange-soft);border-radius:24px;padding:28px;align-self:start}
+.review p{color:var(--muted)}
+footer{background:var(--surface);border-top:1px solid var(--line);padding:28px 0 36px;font-size:.9rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+.flinks a{margin-right:14px;font-weight:600;color:var(--text)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+.tile.reveal{transition:opacity .6s,transform .25s,box-shadow .25s}
+.tile.reveal.in:hover{transform:translateY(-6px) rotate(-1deg)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
 
-/* why */
-.why { padding: 20px 0 64px; }
-.why h2, .drinks h2, .find h2 { font-size: clamp(1.6rem, 4.5vw, 2.2rem); margin-bottom: 8px; }
-.why-grid { display: grid; gap: 28px; margin-top: 28px; }
-@media (min-width: 760px) { .why-grid { grid-template-columns: repeat(3, 1fr); gap: 36px; } }
-.why-item { border-top: 4px solid var(--orange); padding-top: 14px; }
-.why-item:nth-child(2) { border-color: var(--green); }
-.why-item h3 { font-size: 1.15rem; margin-bottom: 6px; }
-.why-item p { margin: 0; color: var(--muted); }
-
-/* drinks */
-.drinks { padding: 56px 0; background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.drink-list { display: grid; gap: 14px; margin-top: 26px; grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 760px) { .drink-list { grid-template-columns: repeat(4, 1fr); gap: 20px; } }
-.drink { text-align: center; }
-.drink .cup { aspect-ratio: 1; border-radius: 28px; display: grid; place-items: center; }
-.drink .cup svg { width: 46%; height: auto; }
-.drink h3 { font-size: 1rem; margin-top: 10px; }
-.drink span { color: var(--muted); font-size: .95rem; }
-.d1 .cup { background: #FDD9A0; color: #F28C28; }
-.d2 .cup { background: #DDEFC8; color: #6FAE3E; }
-.d3 .cup { background: #FFE9A6; color: #E8A800; }
-.d4 .cup { background: #FBCFCF; color: #E0525A; }
-:root[data-theme="dark"] .cup, :root:not([data-theme="light"]) .cup { }
-.more { margin-top: 28px; }
-.full-menu { margin-top: 40px; display: grid; gap: 24px; border-top: 1px solid var(--line); padding-top: 32px; }
-@media (min-width: 760px) { .full-menu { grid-template-columns: repeat(3, 1fr); } }
-.menu-col h3 { font-size: 1.05rem; margin-bottom: 10px; }
-.menu-col ul { list-style: none; margin: 0; padding: 0; color: var(--muted); display: grid; gap: 6px; }
-.menu-col .hint { color: var(--orange); font-weight: 600; font-size: .9rem; margin-top: 10px; }
-
-.blog { padding: 56px 0; }
-.blog-grid { display: grid; gap: 18px; margin-top: 26px; }
-@media (min-width: 760px) { .blog-grid { grid-template-columns: repeat(3, 1fr); } }
-.blog-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
-.blog-card .tag { color: var(--green); font-weight: 600; font-size: .85rem; }
-.blog-card h3 { font-size: 1.05rem; margin-top: 8px; }
-
-.gallery { padding: 20px 0 60px; }
-.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 24px; }
-@media (min-width: 760px) { .gallery-grid { grid-template-columns: repeat(4, 1fr); } }
-.shot { aspect-ratio: 1; border-radius: 16px; border: 2px dashed var(--line);
-  background: repeating-linear-gradient(45deg, transparent 0 12px, var(--line) 12px 13px); }
-
-/* teaser */
-.teaser { background: var(--green-deep); color: var(--on-green); padding: 52px 0; }
-.teaser .wrap { display: grid; gap: 20px; align-items: center; }
-@media (min-width: 800px) { .teaser .wrap { grid-template-columns: 1.4fr auto; } }
-.teaser h2 { font-size: clamp(1.6rem, 4.5vw, 2.3rem); }
-.teaser p { margin: 10px 0 0; opacity: .9; max-width: 44ch; }
-
-/* find */
-.find { padding: 60px 0; }
-.find .wrap { display: grid; gap: 28px; }
-@media (min-width: 800px) { .find .wrap { grid-template-columns: 1fr 1fr; } }
-.find dl { margin: 18px 0 22px; display: grid; gap: 12px; }
-.find dt { font-family: "Poppins", sans-serif; font-weight: 600; font-size: .95rem; }
-.find dd { margin: 2px 0 0; color: var(--muted); }
-.map { min-height: 260px; border-radius: 20px; border: 2px dashed var(--line); display: grid; place-items: center; text-align: center; padding: 20px; color: var(--muted);
-  background: repeating-linear-gradient(45deg, transparent 0 14px, var(--line) 14px 15px); }
-
-footer { background: var(--surface); border-top: 1px solid var(--line); padding: 28px 0 36px; font-size: .9rem; color: var(--muted); }
-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
-footer a { margin-right: 14px; font-weight: 600; color: var(--text); }
-
-.note { background: var(--orange-soft); color: var(--text); font-size: .85rem; text-align: center; padding: 8px 16px; }
-
-@media (prefers-reduced-motion: reduce) { .fill { animation: none; } html { scroll-behavior: auto; } }
+.view{display:none}.view.active{display:block;animation:fadein .4s}@keyframes fadein{from{opacity:0;transform:translateY(10px)}}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FoodEstablishment","name":"Taniya Juice Corner","description":"Fresh fruit juices, shakes and cold coffee made to order opposite Amity University Punjab, Mohali.","url":"https://harry7870-tech.github.io/TaniyaJuiceCorner/","telephone":"+918427225250","servesCuisine":"Juices, Shakes, Cold Coffee","hasMenu":"https://harry7870-tech.github.io/TaniyaJuiceCorner/#/menu","address":{"@type":"PostalAddress","streetAddress":"IT City Rd, opposite Amity University Punjab, JLPL Industrial Area","addressLocality":"Sahibzada Ajit Singh Nagar (Mohali)","addressRegion":"Punjab","postalCode":"140306","addressCountry":"IN"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"17:00"}],"hasMap":"https://maps.app.goo.gl/moEtUiCtpnPabjgK6","sameAs":["https://www.instagram.com/taniyajuicecorner","https://share.google/QMXsVUJQ9d0KtHsb3"]}</script>
 </head>
 <body>
-
-<div class="note">Full site preview. Prices and gallery photos are placeholders — everything else is real.</div>
-
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="Taniya Juice Corner home">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#F28C28"/><circle cx="16" cy="16" r="10" fill="#FDE3C0"/><g stroke="#F28C28" stroke-width="1.6" stroke-linecap="round"><path d="M16 6v20M6 16h20M9 9l14 14M23 9L9 23"/></g><circle cx="16" cy="16" r="2.2" fill="#F28C28"/></svg>
-      Taniya Juice Corner
-    </a>
-    <nav aria-label="Main">
-      <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main id="top">
-  <section class="hero">
-    <div class="wrap">
-      <div>
-        <h1>Fresh juice, made while you watch.</h1>
-        <p class="lead">Real fruit, no shortcuts. Squeezed to order opposite Amity University Punjab, Mohali.</p>
-        <div class="btns">
-          <a class="btn primary" href="#menu">View menu</a>
-          <a class="btn ghost" href="https://maps.app.goo.gl/moEtUiCtpnPabjgK6" target="_blank" rel="noopener">Get directions</a>
-        </div>
-        <p class="hours">Open Mon–Sat, 10 AM–5 PM · Closed Sunday</p>
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="blob"></div>
-        <svg viewBox="0 0 240 300">
-          <defs>
-            <clipPath id="glass"><path d="M50 70h140l-14 200a14 14 0 0 1-14 12H78a14 14 0 0 1-14-12z"/></clipPath>
-          </defs>
-          <!-- straw -->
-          <path d="M132 20l22-6 2 8-18 6v70" stroke="#2A7F48" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-          <!-- juice -->
-          <g clip-path="url(#glass)">
-            <rect x="40" y="60" width="160" height="230" fill="#FFFFFF" opacity=".5"/>
-            <g class="fill"><rect x="40" y="96" width="160" height="200" fill="#F28C28"/>
-              <rect x="40" y="96" width="160" height="16" fill="#F6A94F"/>
-              <circle cx="90" cy="180" r="6" fill="#F6A94F" opacity=".8"/><circle cx="140" cy="215" r="9" fill="#F6A94F" opacity=".8"/><circle cx="112" cy="245" r="5" fill="#F6A94F" opacity=".8"/>
-            </g>
-          </g>
-          <path d="M50 70h140l-14 200a14 14 0 0 1-14 12H78a14 14 0 0 1-14-12z" fill="none" stroke="#2B2B2B" stroke-width="5" stroke-linejoin="round"/>
-          <path d="M72 92l10 150" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".7"/>
-          <!-- orange slice on rim -->
-          <g transform="translate(168 62)">
-            <circle r="30" fill="#F28C28" stroke="#2B2B2B" stroke-width="4"/>
-            <circle r="22" fill="#FDE3C0"/>
-            <g stroke="#F28C28" stroke-width="3" stroke-linecap="round"><path d="M0-22v44M-22 0h44M-15-15l30 30M15-15l-30 30"/></g>
-            <circle r="4" fill="#F28C28"/>
-          </g>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <section class="why" id="about">
-    <div class="wrap">
-      <h2>A regular stop at Amity's gate</h2>
-      <p style="max-width:56ch;color:var(--muted);margin:10px 0 0">Right opposite Amity University Punjab, Taniya Juice Corner has become the go-to break between classes: fresh juice, thick shakes and cold coffee, made in front of you, no shortcuts.</p>
-      <div class="why-grid">
-        <div class="why-item">
-          <h3>100% fresh</h3>
-          <p>Fruit squeezed to order, not poured from a packet.</p>
-        </div>
-        <div class="why-item">
-          <h3>Priced for students</h3>
-          <p>Great taste at pocket-friendly prices, right at the university gate.</p>
-        </div>
-        <div class="why-item">
-          <h3>Made your way</h3>
-          <p>Less sugar, no ice, extra fruit. Just ask.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="drinks" id="menu">
-    <div class="wrap">
-      <h2>Fan favourites</h2>
-      <p style="color:var(--muted);margin:0">Swap in the real bestsellers once the owner confirms them.</p>
-      <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-        <symbol id="cup" viewBox="0 0 60 80"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></symbol>
-      </svg>
-      <div class="drink-list">
-        <div class="drink d1"><div class="cup"><svg aria-hidden="true"><use href="#cup"/></svg></div><h3>Anar juice</h3><span><span class="ph">₹ __</span></span></div>
-        <div class="drink d2"><div class="cup"><svg aria-hidden="true"><use href="#cup"/></svg></div><h3>Mosami juice</h3><span><span class="ph">₹ __</span></span></div>
-        <div class="drink d3"><div class="cup"><svg aria-hidden="true"><use href="#cup"/></svg></div><h3>Mango shake</h3><span><span class="ph">₹ __</span></span></div>
-        <div class="drink d4"><div class="cup"><svg aria-hidden="true"><use href="#cup"/></svg></div><h3>Strawberry shake</h3><span><span class="ph">₹ __</span></span></div>
-      </div>
-      <div class="full-menu">
-        <div class="menu-col">
-          <h3>Fresh juices</h3>
-          <ul><li>Anar (pomegranate)</li><li>Mosami (mosambi)</li><li>Mix fruit</li><li>Pineapple</li></ul>
-        </div>
-        <div class="menu-col">
-          <h3>Shakes</h3>
-          <ul><li>Mango</li><li>Banana</li><li>Strawberry</li><li>Chocolate</li><li>Vanilla</li><li>Butterscotch</li></ul>
-        </div>
-        <div class="menu-col">
-          <h3>Also on the menu</h3>
-          <ul><li>Cold coffee</li></ul>
-          <p class="hint">New menu revealing soon — see the teaser below.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="blog" id="blog">
-    <div class="wrap">
-      <h2>From the blog</h2>
-      <p style="color:var(--muted);margin:8px 0 0">Coming soon, written for the neighbourhood.</p>
-      <div class="blog-grid">
-        <article class="blog-card"><span class="tag">Guide</span><h3>Fresh Juice vs Packaged Juice: Which One Is Actually Better?</h3></article>
-        <article class="blog-card"><span class="tag">Menu</span><h3>Our New Menu Is Here: What's Inside</h3></article>
-        <article class="blog-card"><span class="tag">Picks</span><h3>Top 5 Bestsellers at Taniya Juice Corner</h3></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="teaser">
-    <div class="wrap">
-      <div>
-        <h2>New menu revealing on <span class="ph" style="color:var(--text)">[date]</span></h2>
-        <p>New sips, new blends and a few surprises. Follow us on Instagram to see it first.</p>
-      </div>
-      <a class="btn orange" href="https://www.instagram.com/taniyajuicecorner" target="_blank" rel="noopener">Follow on Instagram</a>
-    </div>
-  </section>
-
-  <section class="gallery" id="gallery">
-    <div class="wrap">
-      <h2>A taste of the counter</h2>
-      <p style="color:var(--muted);margin:8px 0 0">Real photos go here once we shoot them — placeholders for now.</p>
-      <div class="gallery-grid">
-        <div class="shot s1"></div><div class="shot s2"></div><div class="shot s3"></div><div class="shot s4"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="find" id="contact">
-    <div class="wrap">
-      <div>
-        <h2>Find us</h2>
-        <dl>
-          <div><dt>Address</dt><dd>IT City Rd, opposite Amity University Punjab, JLPL Industrial Area, Sahibzada Ajit Singh Nagar, Punjab 140306</dd></div>
-          <div><dt>Timings</dt><dd>Monday–Saturday, 10 AM–5 PM. Closed Sunday.</dd></div>
-          <div><dt>Call or WhatsApp</dt><dd>8427225250</dd></div>
-        </dl>
-        <div class="btns">
-          <a class="btn primary" href="https://wa.me/918427225250" target="_blank" rel="noopener">Chat on WhatsApp</a>
-          <a class="btn ghost" href="https://maps.app.goo.gl/moEtUiCtpnPabjgK6" target="_blank" rel="noopener">Get directions</a>
-          <a class="btn ghost" href="https://www.instagram.com/taniyajuicecorner" target="_blank" rel="noopener">Follow on Instagram</a>
-        </div>
-      </div>
-      <div class="map" role="img" aria-label="Map placeholder">Google Map embed goes here (opposite Amity University Punjab, Mohali)</div>
-    </div>
-  </section>
+<header><div class="wrap nav"><a class="logo" href="#/home" aria-label="Taniya Juice Corner home"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xmlns:c2pa='http://c2pa.org/manifest'%3E%3Cmetadata%3E%3Cc2pa:manifest%3EAAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmNGFhMjAyZC02YzVhLTQ0MGUtYmUyNy0xYzdhOTJlYjAyZWUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaMbcaEs3Lym45GhuuHZt9OoAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo0NWQxYjBiMi1jZTIyLTRiNWYtODg5YS0xZmJmNzNiNWRlODdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNod6qOMNw5sKFyJ1f4g9imegAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggHAz/dV6yMQOZZ1BXaKabUFe+xqOPS+rimw0nqQZDgEqkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaOfsU+DlR3OeXleMXDpl03EAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCO100Pwcpqk0A1CoSFEASEMzVPoC0VOtS8n3pqGri4FmRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBh7Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmY0YWEyMDJkLTZjNWEtNDQwZS1iZTI3LTFjN2E5MmViMDJlZS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmViZGVlYWQxLTlkNTMtNGRhNi1hM2NlLWEyNGQ1ZjE4NmEyMXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAcDP91XrIxA5lnUFdopptQV77Go49L6uKbDSepBkOASqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggh/R/3Qh2nqD6MU0j5O3NhDbVXM3w/I3Ee4UiKFGFPMeiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggGaI8SXFKLH3R3UISlmx/7h16EpreuDffr3F69cGckRh0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQGsmpw2BeWQN0//sY3FqKt3BJW6lrBfzzsaj8+Z1homRs1rdtuVO+59jCtqpAgYkxHue/0EFHyAj2r/OOmoFf8E=%3C/c2pa:manifest%3E%3C/metadata%3E%3Ccircle cx='16' cy='16' r='14' fill='%23F28C28'/%3E%3Ccircle cx='16' cy='16' r='10' fill='%23FDE3C0'/%3E%3Cg stroke='%23F28C28' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M16 6v20M6 16h20M9 9l14 14M23 9L9 23'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='2.2' fill='%23F28C28'/%3E%3C/svg%3E" alt="" width="30" height="30">Taniya Juice Corner</a><nav aria-label="Main"><ul><li><a href="#/home" data-v="home">Home</a></li><li><a href="#/about" data-v="about">About</a></li><li><a href="#/menu" data-v="menu">Menu</a></li><li><a href="#/blog" data-v="blog">Blog</a></li><li><a href="#/contact" data-v="contact">Contact</a></li></ul></nav></div></header>
+<main>
+<div class="view" id="v-home">
+<section class="hero"><div class="wrap"><div>
+<p class="eyebrow">Opposite Amity University Punjab, Mohali</p>
+<h1>Fresh juice, made while you watch.</h1>
+<p class="lead">Real fruit, no shortcuts. Squeezed to order, every single time.</p>
+<div class="btns"><a class="btn primary" href="#/menu">Explore our menu</a><a class="btn ghost" href="https://maps.app.goo.gl/moEtUiCtpnPabjgK6" target="_blank" rel="noopener">Get directions</a></div>
+<p class="hours">Open Mon–Sat, 10 AM–5 PM · Closed Sunday</p></div><div class="hero-art" aria-hidden="true"><div class="blob"></div><svg viewBox="0 0 240 300"><defs><clipPath id="g"><path d="M50 70h140l-14 200a14 14 0 0 1-14 12H78a14 14 0 0 1-14-12z"/></clipPath></defs><path d="M132 20l22-6 2 8-18 6v70" stroke="#2A7F48" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/><g clip-path="url(#g)"><rect x="40" y="60" width="160" height="230" fill="#fff" opacity=".5"/><g class="fill"><rect x="40" y="96" width="160" height="200" fill="#F28C28"/><rect x="40" y="96" width="160" height="16" fill="#F6A94F"/><circle cx="90" cy="180" r="6" fill="#F6A94F" opacity=".8"/><circle cx="140" cy="215" r="9" fill="#F6A94F" opacity=".8"/><circle cx="112" cy="245" r="5" fill="#F6A94F" opacity=".8"/></g></g><path d="M50 70h140l-14 200a14 14 0 0 1-14 12H78a14 14 0 0 1-14-12z" fill="none" stroke="#2B2B2B" stroke-width="5" stroke-linejoin="round"/><path d="M72 92l10 150" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".7"/><g transform="translate(168 62)"><circle r="30" fill="#F28C28" stroke="#2B2B2B" stroke-width="4"/><circle r="22" fill="#FDE3C0"/><g stroke="#F28C28" stroke-width="3" stroke-linecap="round"><path d="M0-22v44M-22 0h44M-15-15l30 30M15-15l-30 30"/></g><circle r="4" fill="#F28C28"/></g></svg></div></div></section>
+<section class="sec"><div class="wrap"><h2>Explore Taniya Juice Corner</h2><div class="tiles">
+<a class="tile t1 reveal" href="#/menu"><h3>Our Menu</h3><p>14 juices, shakes and cold coffee.</p><span>See the drinks →</span></a>
+<a class="tile t2 reveal" href="#/about"><h3>About Us</h3><p>The story of the stall at Amity's gate.</p><span>Read our story →</span></a>
+<a class="tile t3 reveal" href="#/blog"><h3>Blog</h3><p>Nutrition, vitamins and juice benefits.</p><span>Read the blog →</span></a>
+<a class="tile t4 reveal" href="#/contact"><h3>Find Us</h3><p>Address, timings, WhatsApp and reviews.</p><span>Visit us →</span></a></div></div></section>
+<section class="sec alt"><div class="wrap"><h2>Fan favourites</h2><div class="cards"><a class="card" href="#/contact" style="--t:#FBCFCF;--c:#C8323C"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Anar Juice</h3><p>Ruby pomegranate, pressed fresh.</p></a><a class="card" href="#/contact" style="--t:#DDEFC8;--c:#6FAE3E"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Mosami</h3><p>Fresh sweet-lime, squeezed to order.</p></a><a class="card" href="#/contact" style="--t:#FFE4A0;--c:#F2A900"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Mango Shake</h3><p>Thick, sweet and sunny.</p></a><a class="card" href="#/contact" style="--t:#FBD0D6;--c:#E0525A"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Strawberry Shake</h3><p>Pink, fruity and cool.</p></a></div><p class="more"><a class="btn primary" href="#/menu">See the full menu</a></p></div></section>
+<section class="cta"><div class="wrap"><div><h2>Loved your drink?</h2><p>Leave us a Google review or a suggestion. It helps other students find us.</p></div><a class="btn orange" href="https://share.google/QMXsVUJQ9d0KtHsb3" target="_blank" rel="noopener">Review us on Google</a></div></section></div>
+<div class="view" id="v-about">
+<section class="pagehead"><div class="wrap"><p class="eyebrow">About us</p><h1>A regular stop at Amity's gate</h1><p class="lead">Right opposite Amity University Punjab, Taniya Juice Corner has become the go-to break between classes.</p></div></section>
+<section class="sec"><div class="wrap prose"><h2>Our story</h2><p>We are a small juice stall with a simple idea: serve real fruit, made in front of you. Fresh juice, thick shakes and cold coffee, no shortcuts and nothing poured from a packet.</p><p>Students, staff and neighbours stop by for a quick glass between lectures, and many keep coming back for their favourite order.</p></div></section>
+<section class="sec alt"><div class="wrap"><h2>What we stand for</h2><div class="why-grid">
+<div class="why-item reveal"><h3>100% fresh</h3><p>Fruit squeezed to order, not poured from a packet.</p></div>
+<div class="why-item reveal"><h3>Priced for students</h3><p>Great taste at pocket-friendly prices, right at the university gate.</p></div>
+<div class="why-item reveal"><h3>Made your way</h3><p>Less sugar, no ice, extra fruit. Just ask.</p></div></div></div></section>
+<section class="cta"><div class="wrap"><div><h2>Come say hello</h2><p>Mon–Sat, 10 AM–5 PM, opposite Amity University Punjab.</p></div><div class="btns"><a class="btn orange" href="#/menu">See the menu</a><a class="btn ghost light" href="#/contact">Find us</a></div></div></section></div>
+<div class="view" id="v-menu">
+<section class="pagehead"><div class="wrap"><p class="eyebrow">Our menu</p><h1>Freshly made, every glass</h1><p class="lead">Ask for less sugar, no ice or extra fruit. We make it your way.</p></div></section>
+<section class="sec"><div class="wrap"><h2>Fresh juices</h2><div class="cards"><a class="card" href="#/contact" style="--t:#FBCFCF;--c:#C8323C"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Anar Juice</h3><p>Ruby pomegranate, pressed fresh.</p></a><a class="card" href="#/contact" style="--t:#FDD9A0;--c:#F28C28"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Mix Juice</h3><p>A fruity blend of the day's best.</p></a><a class="card" href="#/contact" style="--t:#FFE9A6;--c:#E8A800"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Pineapple Juice</h3><p>Sweet, tangy and tropical.</p></a><a class="card" href="#/contact" style="--t:#FFD3A8;--c:#E8731A"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Carrot Juice</h3><p>Bright, earthy and naturally sweet.</p></a><a class="card" href="#/contact" style="--t:#DDEFC8;--c:#6FAE3E"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Mosami</h3><p>Fresh sweet-lime, squeezed to order.</p></a><a class="card" href="#/contact" style="--t:#F3C6DA;--c:#A4205F"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Beet Root</h3><p>Deep, earthy and full of colour.</p></a></div></div></section>
+<section class="sec alt"><div class="wrap"><h2>Cold coffee &amp; shakes</h2><div class="cards"><a class="card" href="#/contact" style="--t:#E6D3BF;--c:#7A4E2D"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Cold Coffee</h3><p>Chilled, creamy and strong.</p></a><a class="card" href="#/contact" style="--t:#FFE4A0;--c:#F2A900"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Mango Shake</h3><p>Thick, sweet and sunny.</p></a><a class="card" href="#/contact" style="--t:#FFF0B8;--c:#D9B300"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Banana Shake</h3><p>Smooth and filling.</p></a><a class="card" href="#/contact" style="--t:#FFF3DC;--c:#D8B878"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Vanilla Shake</h3><p>Classic and creamy.</p></a><a class="card" href="#/contact" style="--t:#D9D4D0;--c:#3A3432"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Oreo Shake</h3><p>Cookies, cream, crunch.</p></a><a class="card" href="#/contact" style="--t:#FBD0D6;--c:#E0525A"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Strawberry Shake</h3><p>Pink, fruity and cool.</p></a><a class="card" href="#/contact" style="--t:#E3CDBF;--c:#6B3B24"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Chocolate Shake</h3><p>Rich cocoa in a glass.</p></a><a class="card" href="#/contact" style="--t:#FDE0A8;--c:#CC8A1E"><div class="cup"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div><h3>Butterscotch Shake</h3><p>Caramel-sweet and smooth.</p></a></div></div></section>
+<section class="cta"><div class="wrap"><div><h2>Ready to order?</h2><p>Drop by the stall or message us on WhatsApp.</p></div><a class="btn orange" href="https://wa.me/918427225250" target="_blank" rel="noopener">Chat on WhatsApp</a></div></section></div>
+<div class="view" id="v-blog">
+<section class="pagehead"><div class="wrap"><p class="eyebrow">Blog</p><h1>From the juice counter</h1><p class="lead">Simple reads about what goes into your glass.</p></div></section>
+<section class="sec"><div class="wrap"><a class="post" href="https://1drv.ms/w/c/afd15dc6fe5c9591/IQCCbVAJPpNoR5Z_FE98EBXaAUMzc3mwX-QVwgQkD8jIGL0?e=rfX7Bw" target="_blank" rel="noopener"><span class="tag">Nutrition</span><h2>Nutritional Value of Juices: Benefits, Vitamins & What You Should Know</h2><p>What vitamins and nutrients fresh juices offer, and what to keep in mind when choosing them.</p><span class="btn primary">Read the article →</span></a></div></section></div>
+<div class="view" id="v-contact">
+<section class="pagehead"><div class="wrap"><p class="eyebrow">Contact</p><h1>Find us</h1></div></section>
+<section class="sec"><div class="wrap two"><div><dl>
+<div><dt>Address</dt><dd>IT City Rd, opposite Amity University Punjab, JLPL Industrial Area, Sahibzada Ajit Singh Nagar, Punjab 140306</dd></div>
+<div><dt>Timings</dt><dd>Monday–Saturday, 10 AM–5 PM. Closed Sunday.</dd></div>
+<div><dt>Call or WhatsApp</dt><dd><a href="tel:+918427225250">8427225250</a></dd></div></dl>
+<div class="btns"><a class="btn primary" href="https://wa.me/918427225250" target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn ghost" href="https://maps.app.goo.gl/moEtUiCtpnPabjgK6" target="_blank" rel="noopener">Get directions</a><a class="btn ghost" href="https://www.instagram.com/taniyajuicecorner" target="_blank" rel="noopener">Follow on Instagram</a></div></div>
+<div class="review"><h2>Reviews &amp; suggestions</h2><p>Enjoyed your drink? Tell others, or tell us how we can do better. Your feedback goes straight to our Google profile.</p><a class="btn orange" href="https://share.google/QMXsVUJQ9d0KtHsb3" target="_blank" rel="noopener">Leave a Google review</a></div></div></section></div>
 </main>
-
-<footer>
-  <div class="wrap">
-    <div><a href="https://www.instagram.com/taniyajuicecorner" target="_blank" rel="noopener">Instagram</a><a href="#">Facebook</a></div>
-    <div>&copy; Taniya Juice Corner</div>
-  </div>
-</footer>
-
-</body>
-</html>
+<footer><div class="wrap">
+<div><strong>Taniya Juice Corner</strong><br>Opposite Amity University Punjab, Mohali<br>Mon–Sat, 10 AM–5 PM · Closed Sunday</div>
+<div class="flinks"><a href="https://www.instagram.com/taniyajuicecorner" target="_blank" rel="noopener">Instagram</a><a href="https://share.google/QMXsVUJQ9d0KtHsb3" target="_blank" rel="noopener">Google Reviews</a><a href="https://wa.me/918427225250" target="_blank" rel="noopener">WhatsApp</a></div>
+<div>&copy; Taniya Juice Corner</div></div></footer>
+<script>var M={"home": ["Taniya Juice Corner | Fresh Fruit Juice & Shakes in Mohali", "Fresh fruit juices, thick shakes and cold coffee squeezed to order at Taniya Juice Corner, opposite Amity University Punjab, Mohali."], "about": ["About Taniya Juice Corner | Fresh Juice Stall near Amity University Punjab", "Meet Taniya Juice Corner, the fresh juice and shake stall opposite Amity University Punjab in Mohali. Fruit squeezed to order, made your way."], "menu": ["Menu | Fresh Juices, Shakes & Cold Coffee | Taniya Juice Corner", "Anar, mix, pineapple, carrot, mosami and beetroot juice, cold coffee and mango, banana, vanilla, Oreo, strawberry, chocolate and butterscotch shakes in Mohali."], "blog": ["Blog | Juice Nutrition & Health Benefits | Taniya Juice Corner", "Read our blog: Nutritional Value of Juices, Benefits, Vitamins and what you should know."], "contact": ["Contact & Location | Taniya Juice Corner, Mohali", "Find Taniya Juice Corner opposite Amity University Punjab, Mohali. Open Mon\u2013Sat 10 AM\u20135 PM. Call or WhatsApp 8427225250."]};
+function route(){var v=(location.hash.replace('#/','')||'home');if(!M[v])v='home';
+document.querySelectorAll('.view').forEach(function(e){e.classList.toggle('active',e.id==='v-'+v)});
+document.querySelectorAll('nav a').forEach(function(a){if(a.dataset.v===v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+document.title=M[v][0];document.querySelector('meta[name=description]').content=M[v][1];
+document.querySelectorAll('.active .reveal').forEach(function(e){e.classList.add('in')});window.scrollTo(0,0)}
+window.addEventListener('hashchange',route);route();</script>
+<noscript><style>.view{display:block}</style></noscript>
+</body></html>
