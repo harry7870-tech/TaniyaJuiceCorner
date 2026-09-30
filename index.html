@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Taniya Juice Corner | Fresh Fruit Juice in [City]</title>
+<meta name="description" content="Fresh fruit juices, shakes and coolers made in front of you at Taniya Juice Corner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FFF8EC;
+  --surface: #FFFFFF;
+  --text: #2B2B2B;
+  --muted: #5E5A52;
+  --orange: #F28C28;
+  --orange-soft: #FDE3C0;
+  --green: #2A7F48;
+  --green-deep: #1F5C38;
+  --on-green: #FFF8EC;
+  --line: #EBDFC8;
+  --ph: rgba(242,140,40,.28);
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1D1912; --surface: #2A241A; --text: #F6EEDD; --muted: #BDB39D;
+    --orange-soft: #4A3417; --green: #3FA363; --green-deep: #173F27; --line: #3B3324; --ph: rgba(242,140,40,.35);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1D1912; --surface: #2A241A; --text: #F6EEDD; --muted: #BDB39D;
+  --orange-soft: #4A3417; --green: #3FA363; --green-deep: #173F27; --line: #3B3324; --ph: rgba(242,140,40,.35);
+}
+html { scroll-padding-top: env(safe-area-inset-top, 0px); scroll-behavior: smooth; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: "Open Sans", system-ui, sans-serif; line-height: 1.6; font-size: 16px; }
+h1, h2, h3 { font-family: "Poppins", system-ui, sans-serif; line-height: 1.15; margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+.ph { background: var(--ph); border-radius: 4px; padding: 0 .3em; }
+
+/* nav */
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 12px; padding-bottom: 12px; }
+.logo { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 1.1rem; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.logo svg { width: 28px; height: 28px; }
+nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+nav a { text-decoration: none; font-weight: 600; font-size: .95rem; }
+nav a:hover { color: var(--green); }
+@media (max-width: 720px) { nav ul { display: none; } }
+
+/* hero */
+.hero { padding: 40px 0 56px; }
+.hero .wrap { display: grid; gap: 32px; align-items: center; }
+@media (min-width: 800px) { .hero .wrap { grid-template-columns: 1.1fr .9fr; } .hero { padding: 72px 0 80px; } }
+.hero h1 { font-size: clamp(2.2rem, 7vw, 3.6rem); font-weight: 700; letter-spacing: -.02em; }
+.hero p.lead { font-size: 1.1rem; color: var(--muted); max-width: 34ch; margin: 16px 0 26px; }
+.btns { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn { display: inline-block; padding: 13px 22px; border-radius: 999px; font-weight: 600; text-decoration: none; font-family: "Poppins", sans-serif; font-size: .95rem; }
+.btn.primary { background: var(--green); color: #fff; }
+.btn.ghost { border: 2px solid var(--text); }
+.btn.orange { background: var(--orange); color: #2B2B2B; }
+.hero-art { position: relative; display: grid; place-items: center; }
+.blob { position: absolute; width: 88%; aspect-ratio: 1; background: var(--orange-soft); border-radius: 46% 54% 58% 42% / 50% 44% 56% 50%; }
+.hero-art svg { position: relative; width: min(300px, 78%); height: auto; }
+.fill { transform-origin: bottom; animation: rise 1.6s cubic-bezier(.3,.7,.2,1) both; }
+@keyframes rise { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+.hours { margin-top: 22px; font-size: .9rem; color: var(--muted); }
+
+/* why */
+.why { padding: 20px 0 64px; }
+.why h2, .drinks h2, .find h2 { font-size: clamp(1.6rem, 4.5vw, 2.2rem); margin-bottom: 8px; }
+.why-grid { display: grid; gap: 28px; margin-top: 28px; }
+@media (min-width: 760px) { .why-grid { grid-template-columns: repeat(3, 1fr); gap: 36px; } }
+.why-item { border-top: 4px solid var(--orange); padding-top: 14px; }
+.why-item:nth-child(2) { border-color: var(--green); }
+.why-item h3 { font-size: 1.15rem; margin-bottom: 6px; }
+.why-item p { margin: 0; color: var(--muted); }
+
+/* drinks */
+.drinks { padding: 56px 0; background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.drink-list { display: grid; gap: 14px; margin-top: 26px; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 760px) { .drink-list { grid-template-columns: repeat(4, 1fr); gap: 20px; } }
+.drink { text-align: center; }
+.drink .cup { aspect-ratio: 1; border-radius: 28px; display: grid; place-items: center; }
+.drink .cup svg { width: 46%; height: auto; }
+.drink h3 { font-size: 1rem; margin-top: 10px; }
+.drink span { color: var(--muted); font-size: .95rem; }
+.d1 .cup { background: #FDD9A0; color: #F28C28; }
+.d2 .cup { background: #DDEFC8; color: #6FAE3E; }
+.d3 .cup { background: #FFE9A6; color: #E8A800; }
+.d4 .cup { background: #FBCFCF; color: #E0525A; }
+:root[data-theme="dark"] .cup, :root:not([data-theme="light"]) .cup { }
+.more { margin-top: 28px; }
+.full-menu { margin-top: 40px; display: grid; gap: 24px; border-top: 1px solid var(--line); padding-top: 32px; }
+@media (min-width: 760px) { .full-menu { grid-template-columns: repeat(3, 1fr); } }
+.menu-col h3 { font-size: 1.05rem; margin-bottom: 10px; }
+.menu-col ul { list-style: none; margin: 0; padding: 0; color: var(--muted); display: grid; gap: 6px; }
+.menu-col .hint { color: var(--orange); font-weight: 600; font-size: .9rem; margin-top: 10px; }
+
+.blog { padding: 56px 0; }
+.blog-grid { display: grid; gap: 18px; margin-top: 26px; }
+@media (min-width: 760px) { .blog-grid { grid-template-columns: repeat(3, 1fr); } }
+.blog-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+.blog-card .tag { color: var(--green); font-weight: 600; font-size: .85rem; }
+.blog-card h3 { font-size: 1.05rem; margin-top: 8px; }
+
+.gallery { padding: 20px 0 60px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 24px; }
+@media (min-width: 760px) { .gallery-grid { grid-template-columns: repeat(4, 1fr); } }
+.shot { aspect-ratio: 1; border-radius: 16px; border: 2px dashed var(--line);
+  background: repeating-linear-gradient(45deg, transparent 0 12px, var(--line) 12px 13px); }
+
+/* teaser */
+.teaser { background: var(--green-deep); color: var(--on-green); padding: 52px 0; }
+.teaser .wrap { display: grid; gap: 20px; align-items: center; }
+@media (min-width: 800px) { .teaser .wrap { grid-template-columns: 1.4fr auto; } }
+.teaser h2 { font-size: clamp(1.6rem, 4.5vw, 2.3rem); }
+.teaser p { margin: 10px 0 0; opacity: .9; max-width: 44ch; }
+
+/* find */
+.find { padding: 60px 0; }
+.find .wrap { display: grid; gap: 28px; }
+@media (min-width: 800px) { .find .wrap { grid-template-columns: 1fr 1fr; } }
+.find dl { margin: 18px 0 22px; display: grid; gap: 12px; }
+.find dt { font-family: "Poppins", sans-serif; font-weight: 600; font-size: .95rem; }
+.find dd { margin: 2px 0 0; color: var(--muted); }
+.map { min-height: 260px; border-radius: 20px; border: 2px dashed var(--line); display: grid; place-items: center; text-align: center; padding: 20px; color: var(--muted);
+  background: repeating-linear-gradient(45deg, transparent 0 14px, var(--line) 14px 15px); }
+
+footer { background: var(--surface); border-top: 1px solid var(--line); padding: 28px 0 36px; font-size: .9rem; color: var(--muted); }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+footer a { margin-right: 14px; font-weight: 600; color: var(--text); }
+
+.note { background: var(--orange-soft); color: var(--text); font-size: .85rem; text-align: center; padding: 8px 16px; }
+
+@media (prefers-reduced-motion: reduce) { .fill { animation: none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="note">Full site preview. Prices and gallery photos are placeholders — everything else is real.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Taniya Juice Corner home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#F28C28"/><circle cx="16" cy="16" r="10" fill="#FDE3C0"/><g stroke="#F28C28" stroke-width="1.6" stroke-linecap="round"><path d="M16 6v20M6 16h20M9 9l14 14M23 9L9 23"/></g><circle cx="16" cy="16" r="2.2" fill="#F28C28"/></svg>
+      Taniya Juice Corner
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Fresh juice, made while you watch.</h1>
+        <p class="lead">Real fruit, no shortcuts. Squeezed to order opposite Amity University Punjab, Mohali.</p>
+        <div class="btns">
+          <a class="btn primary" href="#menu">View menu</a>
+          <a class="btn ghost" href="https://maps.app.goo.gl/moEtUiCtpnPabjgK6" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <p class="hours">Open Mon–Sat, 10 AM–5 PM · Closed Sunday</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="blob"></div>
+        <svg viewBox="0 0 240 300">
+          <defs>
+            <clipPath id="glass"><path d="M50 70h140l-14 200a14 14 0 0 1-14 12H78a14 14 0 0 1-14-12z"/></clipPath>
+          </defs>
+          <!-- straw -->
+          <path d="M132 20l22-6 2 8-18 6v70" stroke="#2A7F48" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- juice -->
+          <g clip-path="url(#glass)">
+            <rect x="40" y="60" width="160" height="230" fill="#FFFFFF" opacity=".5"/>
+            <g class="fill"><rect x="40" y="96" width="160" height="200" fill="#F28C28"/>
+              <rect x="40" y="96" width="160" height="16" fill="#F6A94F"/>
+              <circle cx="90" cy="180" r="6" fill="#F6A94F" opacity=".8"/><circle cx="140" cy="215" r="9" fill="#F6A94F" opacity=".8"/><circle cx="112" cy="245" r="5" fill="#F6A94F" opacity=".8"/>
+            </g>
+          </g>
+          <path d="M50 70h140l-14 200a14 14 0 0 1-14 12H78a14 14 0 0 1-14-12z" fill="none" stroke="#2B2B2B" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M72 92l10 150" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+          <!-- orange slice on rim -->
+          <g transform="translate(168 62)">
+            <circle r="30" fill="#F28C28" stroke="#2B2B2B" stroke-width="4"/>
+            <circle r="22" fill="#FDE3C0"/>
+            <g stroke="#F28C28" stroke-width="3" stroke-linecap="round"><path d="M0-22v44M-22 0h44M-15-15l30 30M15-15l-30 30"/></g>
+            <circle r="4" fill="#F28C28"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="about">
+    <div class="wrap">
+      <h2>A regular stop at Amity's gate</h2>
+      <p style="max-width:56ch;color:var(--muted);margin:10px 0 0">Right opposite Amity University Punjab, Taniya Juice Corner has become the go-to break between classes: fresh juice, thick shakes and cold coffee, made in front of you, no shortcuts.</p>
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>100% fresh</h3>
+          <p>Fruit squeezed to order, not poured from a packet.</p>
+        </div>
+        <div class="why-item">
+          <h3>Priced for students</h3>
+          <p>Great taste at pocket-friendly prices, right at the university gate.</p>
+        </div>
+        <div class="why-item">
+          <h3>Made your way</h3>
+          <p>Less sugar, no ice, extra fruit. Just ask.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="drinks" id="menu">
+    <div class="wrap">
+      <h2>Fan favourites</h2>
+      <p style="color:var(--muted);margin:0">Swap in the real bestsellers once the owner confirms them.</p>
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="cup" viewBox="0 0 60 80"><path d="M6 14h48l-5 58a5 5 0 0 1-5 4H16a5 5 0 0 1-5-4z" fill="currentColor"/><path d="M6 14h48" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M36 14L44 2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/><path d="M14 30h32" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></symbol>
+      </svg>
+      <div class="drink-list">
+        <div class="drink d1"><div class="cup"><svg aria-hidden="true"><use href="#cup"/></svg></div><h3>Anar juice</h3><span><span class="ph">₹ __</span></span></div>
+        <div class="drink d2"><div class="cup"><svg aria-hidden="true"><use href="#cup"/></svg></div><h3>Mosami juice</h3><span><span class="ph">₹ __</span></span></div>
+        <div class="drink d3"><div class="cup"><svg aria-hidden="true"><use href="#cup"/></svg></div><h3>Mango shake</h3><span><span class="ph">₹ __</span></span></div>
+        <div class="drink d4"><div class="cup"><svg aria-hidden="true"><use href="#cup"/></svg></div><h3>Strawberry shake</h3><span><span class="ph">₹ __</span></span></div>
+      </div>
+      <div class="full-menu">
+        <div class="menu-col">
+          <h3>Fresh juices</h3>
+          <ul><li>Anar (pomegranate)</li><li>Mosami (mosambi)</li><li>Mix fruit</li><li>Pineapple</li></ul>
+        </div>
+        <div class="menu-col">
+          <h3>Shakes</h3>
+          <ul><li>Mango</li><li>Banana</li><li>Strawberry</li><li>Chocolate</li><li>Vanilla</li><li>Butterscotch</li></ul>
+        </div>
+        <div class="menu-col">
+          <h3>Also on the menu</h3>
+          <ul><li>Cold coffee</li></ul>
+          <p class="hint">New menu revealing soon — see the teaser below.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog" id="blog">
+    <div class="wrap">
+      <h2>From the blog</h2>
+      <p style="color:var(--muted);margin:8px 0 0">Coming soon, written for the neighbourhood.</p>
+      <div class="blog-grid">
+        <article class="blog-card"><span class="tag">Guide</span><h3>Fresh Juice vs Packaged Juice: Which One Is Actually Better?</h3></article>
+        <article class="blog-card"><span class="tag">Menu</span><h3>Our New Menu Is Here: What's Inside</h3></article>
+        <article class="blog-card"><span class="tag">Picks</span><h3>Top 5 Bestsellers at Taniya Juice Corner</h3></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="teaser">
+    <div class="wrap">
+      <div>
+        <h2>New menu revealing on <span class="ph" style="color:var(--text)">[date]</span></h2>
+        <p>New sips, new blends and a few surprises. Follow us on Instagram to see it first.</p>
+      </div>
+      <a class="btn orange" href="https://www.instagram.com/taniyajuicecorner" target="_blank" rel="noopener">Follow on Instagram</a>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="wrap">
+      <h2>A taste of the counter</h2>
+      <p style="color:var(--muted);margin:8px 0 0">Real photos go here once we shoot them — placeholders for now.</p>
+      <div class="gallery-grid">
+        <div class="shot s1"></div><div class="shot s2"></div><div class="shot s3"></div><div class="shot s4"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="find" id="contact">
+    <div class="wrap">
+      <div>
+        <h2>Find us</h2>
+        <dl>
+          <div><dt>Address</dt><dd>IT City Rd, opposite Amity University Punjab, JLPL Industrial Area, Sahibzada Ajit Singh Nagar, Punjab 140306</dd></div>
+          <div><dt>Timings</dt><dd>Monday–Saturday, 10 AM–5 PM. Closed Sunday.</dd></div>
+          <div><dt>Call or WhatsApp</dt><dd>8427225250</dd></div>
+        </dl>
+        <div class="btns">
+          <a class="btn primary" href="https://wa.me/918427225250" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a class="btn ghost" href="https://maps.app.goo.gl/moEtUiCtpnPabjgK6" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn ghost" href="https://www.instagram.com/taniyajuicecorner" target="_blank" rel="noopener">Follow on Instagram</a>
+        </div>
+      </div>
+      <div class="map" role="img" aria-label="Map placeholder">Google Map embed goes here (opposite Amity University Punjab, Mohali)</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><a href="https://www.instagram.com/taniyajuicecorner" target="_blank" rel="noopener">Instagram</a><a href="#">Facebook</a></div>
+    <div>&copy; Taniya Juice Corner</div>
+  </div>
+</footer>
+
+</body>
+</html>
