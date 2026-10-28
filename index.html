@@ -284,7 +284,14 @@ dialog .dbtns .btn{flex:1 1 150px;text-align:center}
 .article tbody th{font-weight:600}.article tbody tr:last-child th,.article tbody tr:last-child td{border-bottom:0}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FoodEstablishment","name":"Taniya Juice Corner","description":"Fresh fruit juices, shakes and cold coffee made to order opposite Amity University Punjab, Mohali.","url":"https://harry7870-tech.github.io/TaniyaJuiceCorner/","telephone":"+918427225250","servesCuisine":"Juices, Shakes, Cold Coffee","priceRange":"₹50","hasMenu":"https://harry7870-tech.github.io/TaniyaJuiceCorner/#/menu","address":{"@type":"PostalAddress","streetAddress":"IT City Rd, opposite Amity University Punjab, JLPL Industrial Area","addressLocality":"Sahibzada Ajit Singh Nagar (Mohali)","addressRegion":"Punjab","postalCode":"140306","addressCountry":"IN"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"17:00"}],"hasMap":"https://maps.app.goo.gl/moEtUiCtpnPabjgK6","sameAs":["https://www.instagram.com/taniyajuicecorner","https://share.google/QMXsVUJQ9d0KtHsb3"]}</script>
-</head>
+<style>
+#musicbtn{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:50;width:48px;height:48px;border-radius:50%;border:2px solid var(--text);background:var(--surface);color:var(--text);display:grid;place-items:center;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,.18);transition:transform .2s}
+#musicbtn:hover{transform:scale(1.08)}
+#musicbtn svg{width:22px;height:22px}
+#musicbtn .off{display:none}
+#musicbtn[aria-pressed=false] .on{display:none}
+#musicbtn[aria-pressed=false] .off{display:block}
+</style></head>
 <body>
 <header><div class="wrap nav"><a class="logo" href="#/home" aria-label="Taniya Juice Corner home"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23B3202A'/%3E%3Ccircle cx='16' cy='16' r='10' fill='%23FFF0BF'/%3E%3Cg stroke='%23B3202A' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M16 6v20M6 16h20M9 9l14 14M23 9L9 23'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='2.2' fill='%23F5B921'/%3E%3C/svg%3E" alt="" width="30" height="30">Taniya Juice Corner</a><nav aria-label="Main"><ul><li><a href="#/home" data-v="home">Home</a></li><li><a href="#/about" data-v="about">About</a></li><li><a href="#/menu" data-v="menu">Menu</a></li><li><a href="#/blog" data-v="blog">Blog</a></li><li><a href="#/gallery" data-v="gallery">Gallery</a></li><li><a href="#/contact" data-v="contact">Contact</a></li><li><button type="button" class="cartbtn" id="cartbtn" aria-label="Your order, 0 drinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span>Order</span><span class="cn" id="cn">0</span></button></li></ul></nav></div></header>
 <main>
@@ -812,4 +819,31 @@ document.querySelectorAll('.active .reveal').forEach(function(e){e.classList.add
 var t=sub&&document.getElementById(sub);if(t&&t.closest('.view.active'))setTimeout(function(){t.scrollIntoView({behavior:'smooth',block:'start'})},80)}
 window.addEventListener('hashchange',route);route();</script>
 <noscript><style>.view{display:block}</style></noscript>
-</body></html>
+<button type="button" id="musicbtn" aria-pressed="false" aria-label="Background music"><svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg><svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/><path d="M3 3l18 18"/></svg></button>
+<script>
+(function(){
+var btn=document.getElementById('musicbtn'),ctx,master,timer,playing=false,muted=false,started=false;
+try{muted=localStorage.getItem('tjc-music')==='off'}catch(e){}
+function set(p){playing=p;btn.setAttribute('aria-pressed',p?'true':'false');btn.setAttribute('aria-label',p?'Turn background music off':'Turn background music on')}
+set(false);
+var PAD=[130.81,196,261.63,329.63,392],BELL=[523.25,587.33,659.25,783.99,880];
+function pad(f,i){var o=ctx.createOscillator(),g=ctx.createGain(),l=ctx.createOscillator(),lg=ctx.createGain();
+o.type=i%2?'sine':'triangle';o.frequency.value=f;o.detune.value=(i-2)*4;g.gain.value=.05;
+l.frequency.value=.06+i*.03;lg.gain.value=.025;l.connect(lg);lg.connect(g.gain);o.connect(g);g.connect(master);o.start();l.start()}
+function bell(){if(!playing)return;var t=ctx.currentTime,f=BELL[Math.floor(Math.random()*BELL.length)],o=ctx.createOscillator(),g=ctx.createGain();
+o.type='sine';o.frequency.value=f;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.05,t+.05);g.gain.exponentialRampToValueAtTime(.0001,t+3.5);
+o.connect(g);g.connect(master);g.connect(delay);o.start(t);o.stop(t+3.6)}
+var delay;
+function init(){var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return false;ctx=new AC();
+master=ctx.createGain();master.gain.value=0;var lp=ctx.createBiquadFilter();lp.type='lowpass';lp.frequency.value=1400;
+master.connect(lp);lp.connect(ctx.destination);
+delay=ctx.createDelay(1.5);delay.delayTime.value=.55;var fb=ctx.createGain();fb.gain.value=.45;delay.connect(fb);fb.connect(delay);delay.connect(master);
+PAD.forEach(pad);timer=setInterval(bell,2800);started=true;return true}
+function on(){if(!started&&!init())return;ctx.resume();master.gain.cancelScheduledValues(ctx.currentTime);master.gain.linearRampToValueAtTime(1,ctx.currentTime+2.5);set(true)}
+function off(){if(ctx){master.gain.cancelScheduledValues(ctx.currentTime);master.gain.linearRampToValueAtTime(0,ctx.currentTime+.8)}set(false)}
+btn.addEventListener('click',function(e){e.stopPropagation();muted=playing;try{localStorage.setItem('tjc-music',playing?'off':'on')}catch(x){}playing?off():on()});
+function first(){if(!muted&&!started)on();['pointerdown','keydown','touchstart'].forEach(function(n){document.removeEventListener(n,first)})}
+['pointerdown','keydown','touchstart'].forEach(function(n){document.addEventListener(n,first)});
+document.addEventListener('visibilitychange',function(){if(!ctx)return;if(document.hidden)ctx.suspend();else if(playing)ctx.resume()});
+})();
+</script></body></html>
